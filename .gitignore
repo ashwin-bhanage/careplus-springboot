@@ -1,0 +1,64 @@
+# =========================
+# Maven Build
+# =========================
+target/
+!.mvn/wrapper/maven-wrapper.jar
+dependency-reduced-pom.xml
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# Spring Boot
+# =========================
+*.jar
+*.war
+*.ear
+
+# =========================
+# Secrets / Environment
+# =========================
+.env
+.env*
+application-local.properties
+application-dev.properties
+
+# =========================
+# Eclipse
+# =========================
+.settings/
+.project
+.classpath
+.factorypath
+
+# =========================
+# IntelliJ
+# =========================
+.idea/
+*.iml
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Java Compiled Files
+# =========================
+*.class
+
+# =========================
+# Temporary Files
+# =========================
+*.tmp
+*.swp
+*.bak
