@@ -3,8 +3,12 @@ package com.careplus.entity;
 import java.time.LocalDateTime;
 //import com.careplus.constants.AppointmentStatus;
 
+import com.careplus.constants.AppointmentStatus;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -42,7 +46,7 @@ public class Appointment {
 	@Column(nullable = false)
 	private LocalDateTime appointmentDateTime;
 
-//    @Enumerated(EnumType.STRING)
-//    @Column(nullable = false)
-//    private AppointmentStatus status = AppointmentStatus.BOOKED;
+	@Enumerated(EnumType.STRING)
+	@Column(nullable = false)
+	private AppointmentStatus status = AppointmentStatus.BOOKED;
 }
